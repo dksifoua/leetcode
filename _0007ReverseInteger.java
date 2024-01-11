@@ -9,6 +9,20 @@ public class _0007ReverseInteger {
         System.out.println(x + " => " + reversedX);
     }
 
+    public int reverseBestOptimal(int x) {
+        int reversedX = 0;
+        while (x != 0) {
+            int digit = x % 10;
+            if (reversedX > Integer.MAX_VALUE / 10 || (reversedX == Integer.MAX_VALUE / 10 && digit > 7)) return 0;
+            if (reversedX < Integer.MIN_VALUE / 10 || (reversedX == Integer.MIN_VALUE / 10 && digit < -8)) return 0;
+
+            reversedX = reversedX * 10 + digit;
+            x /= 10;
+        }
+
+        return reversedX;
+    }
+
     public int reverse(int x) {
         if (x == Integer.MIN_VALUE) return 0;
 
