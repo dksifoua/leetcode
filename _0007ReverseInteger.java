@@ -10,6 +10,25 @@ public class _0007ReverseInteger {
     }
 
     public int reverse(int x) {
+        if (x == Integer.MIN_VALUE) return 0;
+
+        int reversedX = 0;
+        int numberOfDigits = x == 0 ? 1 : (int) Math.log10(Math.abs(x)) + 1;
+        System.out.printf("Number of digits in %s is %s\n", x, numberOfDigits);
+
+        int multiplier = (int) Math.pow(10, numberOfDigits - 1);
+        System.out.printf("The initial multiplier is %s\n", multiplier);
+        while (x != 0) {
+            int digit = x % 10;
+            reversedX += digit * multiplier;
+            if ((reversedX / multiplier) % 10 != digit) return 0;
+            System.out.println(multiplier + " " + digit + " " + reversedX);
+
+            multiplier /= 10;
+            x /= 10;
+    }
+
+    public int reverseBruteForce(int x) {
         int reversedX = 0;
         char[] digits = String.valueOf(x).toCharArray();
         System.out.println(Arrays.toString(digits));
