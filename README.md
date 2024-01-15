@@ -25,6 +25,7 @@
 
 ## Solutions
 
-|  ID  | Difficulty | Problem        |
-|------|------------|----------------|
-| 0001 | Easy       | Two Sum        |
+| ID   | Difficulty | Problem         | Topics                |
+|------|------------|-----------------|-----------------------|
+| 0001 | Easy       | Two Sum         | Array, HashMap        |
+| 0002 | Medium     | Add Two numbers | LinkedList, Recursion |
