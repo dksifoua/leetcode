@@ -11,7 +11,7 @@
   - **long**: 8 bytes (64 bits)
   - **float**: 4 bytes (32 bits)
   - **double**: 8 bytes (64 bits)
-- Non Primitive
+- Non-Primitive
   - Linear:
     - Static:
       - **Array**
@@ -25,7 +25,7 @@
 
 ## Solutions
 
-| ID   | Difficulty | Problem         | Topics                |
-|------|------------|-----------------|-----------------------|
-| 0001 | Easy       | Two Sum         | Array, HashMap        |
-| 0002 | Medium     | Add Two numbers | LinkedList, Recursion |
+| ID   | Difficulty | Problem         | Topics                | Solution Link                   |
+|------|------------|-----------------|-----------------------|---------------------------------|
+| 0001 | Easy       | Two Sum         | Array, HashMap        | [solution](./docs/0001-Two-Sum) |
+| 0002 | Medium     | Add Two numbers | LinkedList, Recursion |                                 |
