@@ -25,7 +25,7 @@
 
 ## Solutions
 
-| ID   | Difficulty | Problem         | Topics                | Solution Link                   |
-|------|------------|-----------------|-----------------------|---------------------------------|
-| 0001 | Easy       | Two Sum         | Array, HashMap        | [solution](./docs/0001-Two-Sum) |
-| 0002 | Medium     | Add Two numbers | LinkedList, Recursion |                                 |
+| ID   | Difficulty | Problem         | Topics                | Solution Link                      |
+|------|------------|-----------------|-----------------------|------------------------------------|
+| 0001 | Easy       | Two Sum         | Array, HashMap        | [solution](./docs/0001-Two-Sum.md) |
+| 0002 | Medium     | Add Two numbers | LinkedList, Recursion |                                    |
