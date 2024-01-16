@@ -23,6 +23,43 @@
     - **Tree**
     - **Graph**
 
+## Types of algorithms
+
+- **Simple Recursive Algorithms**
+
+The work as iterative algorithms. The recursion acts as a loop.
+```java
+int sum(int[] A, int n) {
+    if (n == 1) return A[0];
+    
+    s = sum(A, n - 1); // Recursive on all but last
+    return s + A[n - 1]; // Add the last element
+}
+```
+
+- **Divide and Conquer Algorithms**
+  - Divide the problem into smaller sub-problems of the same type, and solve these sub-problems recursively.
+  - Combine the solutions of the sub-problems into a solution for the original problem.
+  - Traditionally, an algorithm is called divide and conquer if it contains at least two recursive calls.
+  - **Example:** Quick sort and Merge sort.
+
+- **Dynamic Programming Algorithms**
+  - Almost same as divide and conquer but they use memorization to solve each sub-problems only one time.
+    - The algorithm saves the past sub-problem solutions to find the next sub-problem solutions.
+  - These types of algorithms are generally used for optimization problems.
+    - The goal is to find the best solution among multiple solutions.
+
+- **Greedy Algorithms**
+  - They work in phases.
+  - At each phase, we take the best solution without worrying about future consequences.
+  - We hope that by choosing a local optimum solution at each step, we will end up at a global optimum solution.
+
+- **Brute Force Algorithms**
+  - They simply try all possibilities until a satisfactory solution is found.
+
+- **Randomized Algorithms**
+  - They use a random at least once during the computation to make a decision.
+
 ## Solutions
 
 | ID   | Difficulty | Problem         | Topics                | Solution Link                      |
