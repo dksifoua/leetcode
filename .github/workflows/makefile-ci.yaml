@@ -22,7 +22,13 @@ jobs:
         with:
           java-version: "20.0.1"
           distribution: "temurin"
-          server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
-          settings-path: ${{ github.workspace }} # location for the settings.xml file
+          server-id: github
+          settings-path: ${{ github.workspace }}
       - name: Unit Tests
         run: ./gradlew test
+      - name: Code Coverage
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        with:
+          fail_ci_if_error: false
