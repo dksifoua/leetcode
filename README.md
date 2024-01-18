@@ -1,5 +1,6 @@
 # Leetcode - Java
-[![Makefile CI](https://github.com/dksifoua/leetcode/actions/workflows/makefile-ci.yaml/badge.svg)](https://github.com/dksifoua/leetcode/actions/workflows/makefile-ci.yaml)
+![Makefile CI](https://github.com/dksifoua/leetcode/actions/workflows/makefile-ci.yaml/badge.svg)
+![Codecov](https://img.shields.io/codecov/c/github/dksifoua/leetcode)
 
 ## Types of data structures
 
