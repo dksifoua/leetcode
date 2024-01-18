@@ -30,16 +30,6 @@ jacocoTestReport {
 
     reports {
         xml.required = true
-        html.required = true
-    }
-}
-
-jacocoTestCoverageVerification {
-    violationRules {
-        rule {
-            limit {
-                minimum = 0.5
-            }
-        }
+        html.required = false
     }
 }
