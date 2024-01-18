@@ -1,0 +1,34 @@
+name: Makefile CI
+on:
+  push:
+    branches:
+      - master
+      - develop
+      - feature/**
+      - ci/**
+  pull_request:
+    branches:
+      - master
+      - develop
+      - feature/**
+      - ci/**
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: "20.0.1"
+          distribution: "temurin"
+          server-id: github
+          settings-path: ${{ github.workspace }}
+      - name: Unit Tests
+        run: ./gradlew test
+      - name: Code Coverage
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        with:
+          fail_ci_if_error: false
