@@ -1,4 +1,4 @@
-package io.dksifoua.validpalindrome;
+package io.dksifoua.leetcode.validpalindrome;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

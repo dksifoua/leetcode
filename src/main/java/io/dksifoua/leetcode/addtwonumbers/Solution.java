@@ -1,4 +1,4 @@
-package io.dksifoua.addtwonumbers;
+package io.dksifoua.leetcode.addtwonumbers;
 
 public class Solution {
 

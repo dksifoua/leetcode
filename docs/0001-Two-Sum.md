@@ -31,4 +31,4 @@ the array, necessitating storing all elements in the hash table.
 
 ## Code
 
-[link](../src/main/java/io/dksifoua/twosum/Solution.java)
+[link](../src/main/java/io/dksifoua/leetcode/twosum/Solution.java)

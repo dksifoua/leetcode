@@ -1,4 +1,4 @@
-package io.dksifoua.twosum;
+package io.dksifoua.leetcode.twosum;
 
 import java.util.HashMap;
 import java.util.Map;

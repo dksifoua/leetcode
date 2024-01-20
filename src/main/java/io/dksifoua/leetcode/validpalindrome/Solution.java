@@ -1,4 +1,4 @@
-package io.dksifoua.validpalindrome;
+package io.dksifoua.leetcode.validpalindrome;
 
 public class Solution {
 

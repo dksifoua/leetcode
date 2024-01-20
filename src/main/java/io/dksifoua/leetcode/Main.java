@@ -1,4 +1,4 @@
-package io.dksifoua;
+package io.dksifoua.leetcode;
 
 public class Main {
     public static void main(String[] args) {

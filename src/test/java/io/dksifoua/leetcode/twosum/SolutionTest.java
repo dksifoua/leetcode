@@ -1,4 +1,4 @@
-package io.dksifoua.twosum;
+package io.dksifoua.leetcode.twosum;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
