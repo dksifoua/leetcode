@@ -68,9 +68,10 @@ int sum(int[] A, int n) {
 
 ## Solutions
 
-| ID   | Difficulty | Problem          | Topics                | Solution Link                               |
-|------|------------|------------------|-----------------------|---------------------------------------------|
-| 0001 | Easy       | Two Sum          | Array, HashMap        | [solution](./docs/0001-Two-Sum.md)          |
-| 0002 | Medium     | Add Two numbers  | LinkedList, Recursion |                                             |
-| 0125 | Easy       | Valid Palindrome | String, Two Pointers  | [solution](./docs/0125-Valid-Palindrome.md) |
-| 0242 | Easy       | Valid Anagram    | String, HashTable     | [solution](./docs/0242-Valid-Anagram.md)    |                   
+| ID   | Difficulty | Problem          | Topics                     | Solution Link                               |
+|------|------------|------------------|----------------------------|---------------------------------------------|
+| 0001 | Easy       | Two Sum          | Array, HashMap             | [solution](./docs/0001-Two-Sum.md)          |
+| 0002 | Medium     | Add Two numbers  | LinkedList, Recursion      |                                             |
+| 0125 | Easy       | Valid Palindrome | String, Two Pointers       | [solution](./docs/0125-Valid-Palindrome.md) |
+| 0242 | Easy       | Valid Anagram    | String, HashTable          | [solution](./docs/0242-Valid-Anagram.md)    |          
+| 0169 | Easy       | Majority Element | Array, HashTable, Counting | [solution](./docs/0169-Majority-Element.md) |
