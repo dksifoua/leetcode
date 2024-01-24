@@ -30,14 +30,14 @@ After iterating through all the prices, `maxP` will hold the maximum profit achi
 
 ## Complexity
 
-- **Time complexity: O(N)** where N is the number of days (the length of the `prices array). This is because it requires
+- **Time complexity: O(N)** where N is the number of days (the length of the `prices` array). This is because it requires
   a single pass through the array, checking each price once.
 - **Space complexity: O(1)** since only a constant amount of extra space is used (for the variables `maxP`, `buy`,
   and `sell`).
 
 ## Code
 
-[Link](/src/main/java/io/dksifoua/leetcode/majorityelement/Solution.java)
+[Link](/src/main/java/io/dksifoua/leetcode/besttimetobuyandsellstock/Solution.java)
 
 ## Summary
 
