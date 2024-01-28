@@ -75,4 +75,5 @@ int sum(int[] A, int n) {
 | 0121 | Easy       | Best Time to Buy and Sell Stock | Array                      | [solution](/docs/0121-Best-Time-to-Buy-and-Sell-Stock.md) |
 | 0125 | Easy       | Valid Palindrome                | String, Two Pointers       | [solution](./docs/0125-Valid-Palindrome.md)               |       
 | 0169 | Easy       | Majority Element                | Array, HashTable, Counting | [solution](./docs/0169-Majority-Element.md)               |
+| 0217 | Easy       | Contains Duplicate              | Array                      | [solution](./docs/0217-Contains-Duplicate.md)             |
 | 0242 | Easy       | Valid Anagram                   | String, HashTable          | [solution](./docs/0242-Valid-Anagram.md)                  |   
