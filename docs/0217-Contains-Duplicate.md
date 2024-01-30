@@ -28,7 +28,7 @@ The primary intuition behind using a `Set` is that this data structure is inhere
 
 ## Code
 
-[Java](/src/main/java/io/dksifoua/leetcode/containsduplicate/Solution.java)
+- [Java](/src/main/java/io/dksifoua/leetcode/containsduplicate/Solution.java)
 
 ## Summary
 

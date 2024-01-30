@@ -35,7 +35,7 @@ because the majority element appears more than `n / 2` times.
 
 ## Solution
 
-[Code](/src/main/java/io/dksifoua/leetcode/majorityelement/Solution.java)
+- [Java](/src/main/java/io/dksifoua/leetcode/majorityelement/Solution.java)
 
 ## Summary
 

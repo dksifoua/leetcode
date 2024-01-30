@@ -33,7 +33,7 @@ string has been checked.
 
 ## Code
 
-[link](../src/main/java/io/dksifoua/leetcode/validpalindrome/Solution.java)
+- [Java](../src/main/java/io/dksifoua/leetcode/validpalindrome/Solution.java)
 
 ## Summary
 

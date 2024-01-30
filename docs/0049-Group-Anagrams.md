@@ -1,4 +1,4 @@
-# [Group Anagram](https://leetcode.com/problems/group-anagrams/description/)
+# [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/)
 
 ## Intuition
 

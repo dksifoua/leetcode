@@ -41,7 +41,7 @@ range `k`.
 
 ## Code
 
-[Java](/src/main/java/io/dksifoua/leetcode/containsduplicate2/Solution.java)
+- [Java](/src/main/java/io/dksifoua/leetcode/containsduplicate2/Solution.java)
 
 ## Summary
 

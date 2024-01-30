@@ -32,7 +32,7 @@ another. If the frequency of each character in both strings is the same, then on
 
 # Code
 
-[Link](/src/main/java/io/dksifoua/leetcode/validanagram/Solution.java)
+- [Java](/src/main/java/io/dksifoua/leetcode/validanagram/Solution.java)
 
 # Summary
 

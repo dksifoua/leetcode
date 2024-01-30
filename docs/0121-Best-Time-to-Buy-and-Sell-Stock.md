@@ -37,7 +37,7 @@ After iterating through all the prices, `maxP` will hold the maximum profit achi
 
 ## Code
 
-[Link](/src/main/java/io/dksifoua/leetcode/besttimetobuyandsellstock/Solution.java)
+- [Java](/src/main/java/io/dksifoua/leetcode/besttimetobuyandsellstock/Solution.java)
 
 ## Summary
 
