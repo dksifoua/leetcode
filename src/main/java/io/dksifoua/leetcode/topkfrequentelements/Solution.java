@@ -9,35 +9,31 @@ public class Solution {
 
     public int[] topKFrequent(int[] nums, int k) {
         int[] result = new int[k];
+        Map<Integer, Integer> count = new HashMap<>();
+        @SuppressWarnings("unchecked")
+        List<Integer>[] bucket = new ArrayList[nums.length];
 
-        Map<Integer, Integer> frequencies = new HashMap<>();
-        for (int num: nums) {
-            frequencies.put(num, 1 + frequencies.getOrDefault(num, 0));
-        }
+        for (int num: nums)
+            count.put(num, 1 + count.getOrDefault(num, 0));
 
-        List<Integer>[] frequencyToElements = new List[nums.length];
-        for (int i = 0; i < nums.length; i++) {
-            frequencyToElements[i] = new ArrayList<>();
-        }
-        for (Map.Entry<Integer, Integer> entry: frequencies.entrySet()) {
-            int index = entry.getValue() - 1;
-            frequencyToElements[index].add(entry.getKey());
+        for (Integer num: count.keySet()) {
+            int index = count.get(num) - 1;
+            if (bucket[index] == null)
+                bucket[index] = new ArrayList<>();
+            bucket[index].add(num);
         }
 
         int j = 0;
         for (int i = nums.length - 1; i >= 0; i--) {
-            boolean filled = false;
-            for (int element: frequencyToElements[i]) {
-                result[j] = element;
-                if (j == k - 1) {
-                    filled = true;
-                    break;
-                }
-                j += 1;
+            if (bucket[i] == null)
+                continue;
+            for (int element: bucket[i]) {
+                result[j++] = element;
+                if (j == k)
+                    return result;
             }
-            if (filled) break;
         }
 
-        return result;
+        throw new IllegalArgumentException("There is no solution for this problem!!!");
     }
 }
