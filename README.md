@@ -72,6 +72,7 @@ int sum(int[] A, int n) {
 |------|------------|------------------------------------|-----------------------------------|------------------------------------------------------------|
 | 0001 | Easy       | Two Sum                            | Array, HashMap                    | [solution](./docs/0001-Two-Sum.md)                         |
 | 0002 | Medium     | Add Two numbers                    | LinkedList, Recursion             |                                                            |
+| 0015 | Medium     | Three sum                          | Array, Two Pointers, Sorting      | [solution](./docs/0015-Three-Sum.md)                       |
 | 0049 | Medium     | Group Anagrams                     | Array, HashTable, String, Sorting | [solution](./docs/0049-Group-Anagrams.md )                 |
 | 0121 | Easy       | Best Time to Buy and Sell Stock    | Array                             | [solution](./docs/0121-Best-Time-to-Buy-and-Sell-Stock.md) |
 | 0125 | Easy       | Valid Palindrome                   | String, Two Pointers              | [solution](./docs/0125-Valid-Palindrome.md)                |       
