@@ -1,0 +1,11 @@
+version: 3
+tasks:
+  clean:
+    desc: Clean build
+    cmd: ./gradlew clean
+    silent: true
+
+  test:
+    desc: Test
+    cmd: ./gradlew test
+    silent: true
