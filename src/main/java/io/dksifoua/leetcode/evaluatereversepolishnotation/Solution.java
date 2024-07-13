@@ -3,10 +3,6 @@ package io.dksifoua.leetcode.evaluatereversepolishnotation;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-interface Apply {
-    int apply(int a, int b);
-}
-
 public class Solution {
 
     private Apply getApplyFunction(String operator) {
