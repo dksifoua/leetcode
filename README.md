@@ -9,6 +9,7 @@
 | 0002 | Medium     | Add Two numbers                    | LinkedList, Recursion                           |                                                             |
 | 0011 | Medium     | Container With Most Water          | Array, Two Pointers, Greedy                     | [solution](./docs/0011-Container-With-Most-Water.md)        |
 | 0015 | Medium     | Three sum                          | Array, Two Pointers, Sorting                    | [solution](./docs/0015-Three-Sum.md)                        |
+| 0022 | Medium     | Generate Parentheses               | String, Dynamic Programming, Backtracking       | [solution](./docs/0022-Generate-Parentheses.md)             |
 | 0036 | Medium     | Valid Sudoku                       | Array, HashTable, Matrix                        | [solution](./docs/0036-Valid-Sudoku.md)                     |
 | 0042 | Hard       | Trapping Rain Water                | Array, Two Pointers, Dynamic Programming, Stack | [solution](./docs/0042-Trapping-Rain-Water.md)              |
 | 0049 | Medium     | Group Anagrams                     | Array, HashTable, String, Sorting               | [solution](./docs/0049-Group-Anagrams.md )                  |
