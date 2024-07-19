@@ -17,6 +17,7 @@
 | 0125 | Easy       | Valid Palindrome                   | String, Two Pointers                            | [solution](./docs/0125-Valid-Palindrome.md)                 |       
 | 0128 | Medium     | Longest Consecutive Sequence       | Array, HashSet                                  | [solution](./docs/0128-Longest-Consecutive-Sequence.md)     |
 | 0150 | Medium     | Evaluate Reverse Polish Notation   | Array, Math, Stack                              | [solution](./docs/0150-Evaluate-Reverse-Polish-Notation.md) |
+| 0155 | Medium     | Min Stack                          | Stack, Design                                   | [solution](./docs/0155-Min-Stack.md)                        |
 | 0167 | Medium     | Two Sum II - Input Array Is Sorted | Array, Two Pointers                             | [solution](./docs/0167-Two-Sum-II-Array-Is-Sorted.md)       |
 | 0169 | Easy       | Majority Element                   | Array, HashTable, Counting                      | [solution](./docs/0169-Majority-Element.md)                 |
 | 0217 | Easy       | Contains Duplicate                 | Array                                           | [solution](./docs/0217-Contains-Duplicate.md)               |
