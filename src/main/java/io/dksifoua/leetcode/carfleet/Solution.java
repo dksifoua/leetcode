@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Solution {
 
-    private record PositionSpeed(int position, int speed) {};
+    private record PositionSpeed(int position, int speed) {}
 
     public int carFleet(int target, int[] position, int[] speed) {
         List<PositionSpeed> positionSpeeds = new ArrayList<>() {{
@@ -21,7 +21,6 @@ public class Solution {
                 fleetHeads.push(time);
             }
         }
-        System.out.println(fleetHeads);
 
         return fleetHeads.size();
     }
