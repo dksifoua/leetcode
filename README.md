@@ -26,5 +26,6 @@
 | 0238 | Medium     | Product of Array Except Self       | Array                                           | [solution](./docs/0238-Product-Of-Array-Except-Self.md)     |
 | 0242 | Easy       | Valid Anagram                      | String, HashTable                               | [solution](./docs/0242-Valid-Anagram.md)                    |   
 | 0347 | Medium     | Top K Frequent Elements            | Array, HashMap, Bucket Sort                     | [Solution](./docs/0347-Top-K-Frequent-Elements.md)          |
+| 0704 | Easy       | Binary Search                      | Array, Binary Search                            | [solution](./docs/0704-Binary-Search.md)                    |
 | 0739 | Medium     | Daily Temperatures                 | Array, Stack, Monotonic Stack                   | [solution](./docs/0139-Daily-Temperatures.md)               |
 | 0853 | Medium     | Car Fleet                          | Array, Stack, Sorting, Monotonic Stack          | [solution](./docs/0853-Car-Fleet.md)                        |
