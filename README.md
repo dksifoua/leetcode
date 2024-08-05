@@ -13,6 +13,7 @@
 | 0036 | Medium     | Valid Sudoku                       | Array, HashTable, Matrix                        | [solution](./docs/0036-Valid-Sudoku.md)                     |
 | 0042 | Hard       | Trapping Rain Water                | Array, Two Pointers, Dynamic Programming, Stack | [solution](./docs/0042-Trapping-Rain-Water.md)              |
 | 0049 | Medium     | Group Anagrams                     | Array, HashTable, String, Sorting               | [solution](./docs/0049-Group-Anagrams.md )                  |
+| 0074 | Medium     | Search a 2D Matrix                 | Array, Binary Search, Matrix                    | [solution](./docs/0074-Search-A-2D-Matrix.md)               |
 | 0084 | Hard       | Largest Rectangle in Histogram     | Array, Stack, Monotonic Stack                   | [solution](./docs/0084-Largest-Rectangle-In-Histogram.md)   |
 | 0121 | Easy       | Best Time to Buy and Sell Stock    | Array                                           | [solution](./docs/0121-Best-Time-to-Buy-and-Sell-Stock.md)  |
 | 0125 | Easy       | Valid Palindrome                   | String, Two Pointers                            | [solution](./docs/0125-Valid-Palindrome.md)                 |       
