@@ -33,3 +33,4 @@
 | 0739 | Medium     | Daily Temperatures                   | Array, Stack, Monotonic Stack                   | [solution](./docs/0139-Daily-Temperatures.md)                   |
 | 0853 | Medium     | Car Fleet                            | Array, Stack, Sorting, Monotonic Stack          | [solution](./docs/0853-Car-Fleet.md)                            |
 | 0875 | Medium     | Koko Eating Bananas                  | Array, Binary Search                            | [solution](./docs/0875-Koko-Eating-Bananas.md)                  |
+| 0981 | Medium     | Time Based Key-Value Store           | Hash Table, String, Binary Search, Design       | [solution](./docs/0981-Time-Based-Key-Value-Store.md)           | 
