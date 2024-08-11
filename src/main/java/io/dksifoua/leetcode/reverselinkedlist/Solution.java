@@ -4,15 +4,17 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-@AllArgsConstructor
-@Getter
-@Setter
-class ListNode {
-    private int val;
-    private ListNode next;
-}
+
 
 public class Solution {
+
+    @AllArgsConstructor
+    @Getter
+    @Setter
+    static class ListNode {
+        private int val;
+        private ListNode next;
+    }
 
     public ListNode reverseList(ListNode head) {
         ListNode reversedHead = null, current = head;

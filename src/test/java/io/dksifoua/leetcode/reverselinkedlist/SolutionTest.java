@@ -9,13 +9,13 @@ public class SolutionTest {
 
     @Test
     void test1() {
-        ListNode head = new ListNode(1,
-                new ListNode(2,
-                        new ListNode(3,
-                                new ListNode(4,
-                                        new ListNode(5, null)))));
-        ListNode reversedHead = solution.reverseList(head);
-        ListNode reversedCurrent = reversedHead;
+        Solution.ListNode head = new Solution.ListNode(1,
+                new Solution.ListNode(2,
+                        new Solution.ListNode(3,
+                                new Solution.ListNode(4,
+                                        new Solution.ListNode(5, null)))));
+        Solution.ListNode reversedHead = solution.reverseList(head);
+        Solution.ListNode reversedCurrent = reversedHead;
         int val = 5;
         while (reversedCurrent != null) {
             Assertions.assertEquals(val, reversedCurrent.getVal());
@@ -26,8 +26,8 @@ public class SolutionTest {
 
     @Test
     void test2() {
-        ListNode head = null;
-        ListNode reversedHead = solution.reverseList(head);
+        Solution.ListNode head = null;
+        Solution.ListNode reversedHead = solution.reverseList(head);
         Assertions.assertNull(reversedHead);
     }
 }
