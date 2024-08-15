@@ -10,6 +10,7 @@
 | 003  | Medium     | Longest Substring Without Repeating Characters | Hash Table, String, Sliding Window              | [solution](./docs/0003-Longest-Substring-Without-Repeating-Characters.md) |            
 | 0011 | Medium     | Container With Most Water                      | Array, Two Pointers, Greedy                     | [solution](./docs/0011-Container-With-Most-Water.md)                      |
 | 0015 | Medium     | Three sum                                      | Array, Two Pointers, Sorting                    | [solution](./docs/0015-Three-Sum.md)                                      |
+| 0019 | Medium     | Remove Nth Node From End Of List               | Linked List, Two Pointers                       | [solution](./docs/0019-Remove-Nth-Node-From-End-Of-List.md)               |
 | 0021 | Easy       | Merge Two Sorted Lists                         | Linked List, Recursion                          | [solution](./docs/0021-Merge-Two-Sorted-Lists.md)                         |
 | 0022 | Medium     | Generate Parentheses                           | String, Dynamic Programming, Backtracking       | [solution](./docs/0022-Generate-Parentheses.md)                           |
 | 0033 | Medium     | Search in Rotated Sorted Array                 | Array, Binary Search                            | [solution](./docs/0033-Search-In-Rotated-Sorted-Array.md)                 |
