@@ -1,43 +1,45 @@
 package io.dksifoua.leetcode.addtwonumbers;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
 public class Solution {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode solution = new ListNode(Integer.MIN_VALUE);
-        ListNode current = solution;
+        if (l1 == null) return l2;
+        if (l2 == null) return l1;
 
-        int retention = 0, sum = 0;
-        ListNode node1 = l1, node2 = l2;
-        while (node1 != null || node2 != null) {
-            if (node1 != null) {
-                sum += node1.val;
-                node1 = node1.next;
+        int retention = 0;
+        ListNode result = new ListNode(0, null);
+        ListNode current = result;
+        while (l1 != null || l2 != null) {
+            int sum = retention;
+            if (l1 != null) {
+                sum += l1.getVal();
+                l1 = l1.getNext();
             }
-            if (node2 != null) {
-                sum += node2.val;
-                node2 = node2.next;
+            if (l2 != null) {
+                sum += l2.getVal();
+                l2 = l2.getNext();
             }
-            sum += retention;
             retention = sum / 10;
-            sum %= 10;
-
-            current = append(current, sum);
-            sum = 0;
+            current.setNext(new ListNode(sum % 10, null));
+            current = current.getNext();
         }
 
         if (retention > 0) {
-            append(current, retention);
+            current.setNext(new ListNode(retention, null));
         }
 
-        return solution;
+        return result.getNext();
     }
 
-    private ListNode append(ListNode current, int sum) {
-        if(current.val == Integer.MIN_VALUE) {
-            current.val = sum;
-            return current;
-        }
-        current.next = new ListNode(sum);
-        return current.next;
+    @AllArgsConstructor
+    @Getter
+    @Setter
+    public static final class ListNode {
+        private int val;
+        private ListNode next;
     }
 }
