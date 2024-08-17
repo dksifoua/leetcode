@@ -56,4 +56,19 @@ public class SolutionTest {
         Assertions.assertEquals(1, result.getNext().getNext().getNext().getNext().getNext().getNext().getNext().getVal());
         Assertions.assertNull(result.getNext().getNext().getNext().getNext().getNext().getNext().getNext().getNext());
     }
+
+    @Test
+    void test4() {
+        ListNode list1 = new ListNode(2,
+                new ListNode(4,
+                        new ListNode(3, null)));
+        ListNode list2 = new ListNode(5,
+                new ListNode(6,
+                        new ListNode(4, null)));
+        ListNode result = solution.addTwoNumbers(list1, list2);
+        Assertions.assertEquals(7, result.getVal());
+        Assertions.assertEquals(0, result.getNext().getVal());
+        Assertions.assertEquals(8, result.getNext().getNext().getVal());
+        Assertions.assertNull(result.getNext().getNext().getNext());
+    }
 }

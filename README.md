@@ -22,6 +22,7 @@
 | 0121 | Easy       | Best Time to Buy and Sell Stock                | Array                                           | [solution](./docs/0121-Best-Time-to-Buy-and-Sell-Stock.md)                |
 | 0125 | Easy       | Valid Palindrome                               | String, Two Pointers                            | [solution](./docs/0125-Valid-Palindrome.md)                               |       
 | 0128 | Medium     | Longest Consecutive Sequence                   | Array, HashSet                                  | [solution](./docs/0128-Longest-Consecutive-Sequence.md)                   |
+| 0141 | Easy       | Linked List Cycle                              | Hash Table, Linked List, Two Pointers           | [solution](./docs/0141-Linked-List-Cycle.md)                              |
 | 0143 | Medium     | Reorder List                                   | Linked List, Two Pointers, Stack, Recursion     | [solution](./docs/0143-Reorder-List.md)                                   |               
 | 0150 | Medium     | Evaluate Reverse Polish Notation               | Array, Math, Stack                              | [solution](./docs/0150-Evaluate-Reverse-Polish-Notation.md)               |
 | 0153 | Medium     | Find Minimum in Rotated Sorted Array           | Array, Binary Search                            | [solution](./docs/0153-Find-Minimum-In-Rotated-Sorted-Array.md)           |
