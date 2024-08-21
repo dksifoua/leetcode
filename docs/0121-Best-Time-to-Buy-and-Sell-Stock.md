@@ -2,38 +2,25 @@
 
 ## Intuition
 
-The basic idea is to find the lowest price to buy the stock (buy) and then find the highest price to sell the stock
-after that day (sell). The goal is to maximize the difference between the selling and buying prices, which represents
-the profit. It's important to note that we must buy before we sell, and we can only perform one buy and one sell
-operation.
+The key insight for this problem is that to maximize profit, we need to find the lowest buying price and the highest
+selling price that comes after it. We can do this in a single pass through the array by keeping track of the minimum
+price seen so far and updating the maximum profit if we find a better selling opportunity.
 
 ## Approach
 
-1. Initialization:
-
-    - Start with a `maxP` variable set to 0, representing the maximum profit.
-    - Initialize `buy` and `sell` variables with the price on the first day.
-
-2. Iterating Through Prices:
-
-    - Loop through the array of prices starting from the second day.
-    - If the current price is less than the current buy price, update buy and sell to this lower price. This step
-      ensures we're considering the lowest price so far to buy the stock.
-    - If the current price is higher than the current sell price, update sell to this price. This step looks for a
-      higher selling price after the buying day.
-    - After each iteration, update `maxP` by calculating the profit (`sell - buy) and comparing it with the current `
-      maxP`. The profit is only updated if it's greater than the previous `maxP`.
-
-3. Return the Maximum Profit:
-
-After iterating through all the prices, `maxP` will hold the maximum profit achievable.
+1. **Initialization:**
+    - `maxProfit` to keep track of the maximum profit (initialized to 0).
+    - `buy` to keep track of the minimum price seen so far (initialized to the maximum possible integer)
+2. **Iterating Through Prices:**
+    - If the current price is lower than the buy price, update `buy
+    - Calculate the potential profit (`price - buy`) and update `maxProfit if it's higher
+3. **Return the Maximum Profit:** After iterating through all the prices, `maxProfit` will hold the maximum profit
+   achievable.
 
 ## Complexity
 
-- **Time complexity: O(N)** where N is the number of days (the length of the `prices` array). This is because it requires
-  a single pass through the array, checking each price once.
-- **Space complexity: O(1)** since only a constant amount of extra space is used (for the variables `maxP`, `buy`,
-  and `sell`).
+- **Time complexity: O(n)** where `n` is the number of prices in the array. We make a single pass through the array
+- **Space complexity: O(1)** since we use only a constant amount of extra space regardless of the input size.
 
 ## Code
 
@@ -41,11 +28,11 @@ After iterating through all the prices, `maxP` will hold the maximum profit achi
 
 ## Summary
 
-This approach is optimal for several reasons:
+This approach efficiently solves the problem of finding the maximum profit from a single buy and sell transaction. It
+uses a single-pass approach, which is optimal for this problem.
 
-- **Efficiency:** It efficiently finds the maximum profit with a single pass through the stock prices, avoiding the need
-  for nested loops which would increase the time complexity.
-- **Simplicity:** The logic is straightforward and easy to understand, focusing on updating the buy and sell prices
-  based on the conditions that define the maximum profit.
-- **Practicality:** The solution is practical and aligns well with real-world scenarios, where we want to buy low and
-  sell high.
+**Key strengths of the implementation:**
+
+- Efficient single-pass algorithm
+- Correct handling of the constraints (buy before sell)
+- Use of constant extra space
