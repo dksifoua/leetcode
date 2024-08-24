@@ -25,6 +25,7 @@
 | 0138 | Medium     | Copy List with Random Pointer                  | Linked List, Hash Table                              | [solution](./docs/0138-Copy-List-With-Random-Pointer.md)                  |                                       
 | 0141 | Easy       | Linked List Cycle                              | Hash Table, Linked List, Two Pointers                | [solution](./docs/0141-Linked-List-Cycle.md)                              |
 | 0143 | Medium     | Reorder List                                   | Linked List, Two Pointers, Stack, Recursion          | [solution](./docs/0143-Reorder-List.md)                                   |               
+| 0146 | Medium     | LRU Cache                                      | Hash Table, Design, Linked List, Doubly-Linked List  | [solution](./docs/0146-LRU-Cache.md)                                      |
 | 0150 | Medium     | Evaluate Reverse Polish Notation               | Array, Math, Stack                                   | [solution](./docs/0150-Evaluate-Reverse-Polish-Notation.md)               |
 | 0153 | Medium     | Find Minimum in Rotated Sorted Array           | Array, Binary Search                                 | [solution](./docs/0153-Find-Minimum-In-Rotated-Sorted-Array.md)           |
 | 0155 | Medium     | Min Stack                                      | Stack, Design                                        | [solution](./docs/0155-Min-Stack.md)                                      |
