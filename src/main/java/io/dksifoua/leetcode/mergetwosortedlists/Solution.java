@@ -61,6 +61,19 @@ public class Solution {
         return mergedList.getNext();
     }
 
+    public ListNode mergeTwoListsRecursive(ListNode list1, ListNode list2) {
+        if (list1 == null) return list2;
+        if (list2 == null) return list1;
+
+        ListNode mergedList = new ListNode(0, null);
+        if (list1.getVal() < list2.getVal()) {
+            mergedList.setNext(new ListNode(list1.getVal(), this.mergeTwoListsRecursive(list1.getNext(), list2)));
+        } else {
+            mergedList.setNext(new ListNode(list2.getVal(), this.mergeTwoListsRecursive(list1, list2.getNext())));
+        }
+        return mergedList.getNext();
+    }
+
     @AllArgsConstructor
     @Getter
     @Setter
