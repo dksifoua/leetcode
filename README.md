@@ -1,7 +1,7 @@
-# Leetcode - Java
+[![](https://github.com/dksifoua/leetcode/actions/workflows/leetcode.yaml/badge.svg)](https://github.com/dksifoua/leetcode/actions/workflows/leetcode.yaml/badge.svg)
+[![](https://img.shields.io/codecov/c/github/dksifoua/leetcode?color=blue)](https://img.shields.io/codecov/c/github/dksifoua/leetcode?color=blue)
 
-![Makefile CI](https://github.com/dksifoua/leetcode/actions/workflows/makefile-ci.yaml/badge.svg)
-![Codecov](https://img.shields.io/codecov/c/github/dksifoua/leetcode)
+# Leetcode
 
 | ID   | Difficulty | Problem                                        | Topics                                               | Link                                                                      |
 |------|------------|------------------------------------------------|------------------------------------------------------|---------------------------------------------------------------------------|
