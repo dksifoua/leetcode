@@ -1,4 +1,4 @@
-name: Makefile CI
+name: leetcode
 on:
   push:
     branches:
@@ -13,19 +13,22 @@ on:
       - feature/**
       - ci/**
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Setup JDK
-        uses: actions/setup-java@v3
+      - name: Setup Java
+        uses: actions/setup-java@v4
         with:
-          java-version: "20.0.1"
-          distribution: "temurin"
-          server-id: github
-          settings-path: ${{ github.workspace }}
+          distribution: oracle
+          java-version: 21
+      - name: Setup Task
+        uses: arduino/setup-task@v2
+        with:
+          version: 3.x
+          repo-token: ${{ secrets.GH_TOKEN }}
       - name: Unit Tests
-        run: ./gradlew test
+        run: task test
       - name: Code Coverage
         uses: codecov/codecov-action@v3
         env:

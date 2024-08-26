@@ -39,6 +39,7 @@
 | 0297 | Medium     | Find the Duplicate Number                      | Array, Two Pointers, Binary Search, Bit Manipulation | [solution](./docs/0287-Find-The-Duplicate-Number.md)                      |
 | 0347 | Medium     | Top K Frequent Elements                        | Array, HashMap, Bucket Sort                          | [Solution](./docs/0347-Top-K-Frequent-Elements.md)                        |
 | 0392 | Easy       | Is Subsequence                                 | Two Pointers, String, Dynamic Programming            | [solution](./docs/0392-Is-Subsequence.md)                                 |
+| 0424 | Medium     | Longest Repeating Character Replacement        | HashTable, String, Sliding Windows                   | [solution](./docs/0424-Longest-Repeating-Character-Replacement.md)        |
 | 0704 | Easy       | Binary Search                                  | Array, Binary Search                                 | [solution](./docs/0704-Binary-Search.md)                                  |
 | 0739 | Medium     | Daily Temperatures                             | Array, Stack, Monotonic Stack                        | [solution](./docs/0139-Daily-Temperatures.md)                             |
 | 0853 | Medium     | Car Fleet                                      | Array, Stack, Sorting, Monotonic Stack               | [solution](./docs/0853-Car-Fleet.md)                                      |

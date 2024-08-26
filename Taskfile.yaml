@@ -6,6 +6,8 @@ tasks:
     silent: true
 
   test:
-    desc: Test
-    cmd: ./gradlew test
+    desc: Unit tests
+    cmds:
+      - task: clean
+      - ./gradlew test
     silent: true
