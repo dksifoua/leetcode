@@ -7,7 +7,8 @@
 |------|------------|------------------------------------------------|------------------------------------------------------|---------------------------------------------------------------------------|
 | 0001 | Easy       | Two Sum                                        | Array, HashMap                                       | [solution](./docs/0001-Two-Sum.md)                                        |
 | 0002 | Medium     | Add Two numbers                                | LinkedList, Recursion                                | [solution](./docs/0002-Add-Two-Numbers.md)                                |
-| 003  | Medium     | Longest Substring Without Repeating Characters | Hash Table, String, Sliding Window                   | [solution](./docs/0003-Longest-Substring-Without-Repeating-Characters.md) |            
+| 0003 | Medium     | Longest Substring Without Repeating Characters | Hash Table, String, Sliding Window                   | [solution](./docs/0003-Longest-Substring-Without-Repeating-Characters.md) |
+| 0004 | Hard       | Median of Two Sorted Arrays                    | Array, Binary Search, Divide and Conquer             | [solution](./docs/0004-Median-of-Two-Sorted-Arrays.md)                    |
 | 0011 | Medium     | Container With Most Water                      | Array, Two Pointers, Greedy                          | [solution](./docs/0011-Container-With-Most-Water.md)                      |
 | 0015 | Medium     | Three sum                                      | Array, Two Pointers, Sorting                         | [solution](./docs/0015-Three-Sum.md)                                      |
 | 0019 | Medium     | Remove Nth Node From End Of List               | Linked List, Two Pointers                            | [solution](./docs/0019-Remove-Nth-Node-From-End-Of-List.md)               |
