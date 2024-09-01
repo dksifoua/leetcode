@@ -1,8 +1,6 @@
 package io.dksifoua.leetcode.addtwonumbers;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import io.dksifoua.leetcode.utils.ListNode;
 
 public class Solution {
 
@@ -16,11 +14,11 @@ public class Solution {
         while (l1 != null || l2 != null) {
             int sum = retention;
             if (l1 != null) {
-                sum += l1.getVal();
+                sum += l1.getValue();
                 l1 = l1.getNext();
             }
             if (l2 != null) {
-                sum += l2.getVal();
+                sum += l2.getValue();
                 l2 = l2.getNext();
             }
             retention = sum / 10;
@@ -33,13 +31,5 @@ public class Solution {
         }
 
         return result.getNext();
-    }
-
-    @AllArgsConstructor
-    @Getter
-    @Setter
-    public static final class ListNode {
-        private int val;
-        private ListNode next;
     }
 }

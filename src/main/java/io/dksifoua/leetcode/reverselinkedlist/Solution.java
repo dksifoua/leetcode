@@ -1,8 +1,6 @@
 package io.dksifoua.leetcode.reverselinkedlist;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import io.dksifoua.leetcode.utils.ListNode;
 
 
 public class Solution {
@@ -10,7 +8,7 @@ public class Solution {
     public ListNode reverseList(ListNode head) {
         ListNode reversedHead = null, current = head;
         while (current != null) {
-            reversedHead = new ListNode(current.getVal(), reversedHead);
+            reversedHead = new ListNode(current.getValue(), reversedHead);
             current = current.getNext();
         }
 
@@ -29,13 +27,5 @@ public class Solution {
             current = prev.getNext();
         }
         return head;
-    }
-
-    @AllArgsConstructor
-    @Getter
-    @Setter
-    static class ListNode {
-        private int val;
-        private ListNode next;
     }
 }

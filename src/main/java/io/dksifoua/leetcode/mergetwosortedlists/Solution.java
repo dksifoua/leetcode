@@ -1,8 +1,6 @@
 package io.dksifoua.leetcode.mergetwosortedlists;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import io.dksifoua.leetcode.utils.ListNode;
 
 public class Solution {
 
@@ -12,17 +10,17 @@ public class Solution {
         while (current1 != null || current2 != null) {
             int val;
             if (current1 != null && current2 != null) {
-                val = Math.min(current1.getVal(), current2.getVal());
-                if (current1.getVal() <= current2.getVal()) {
+                val = Math.min(current1.getValue(), current2.getValue());
+                if (current1.getValue() <= current2.getValue()) {
                     current1 = current1.getNext();
                 } else {
                     current2 = current2.getNext();
                 }
             } else if (current1 == null) {
-                val = current2.getVal();
+                val = current2.getValue();
                 current2 = current2.getNext();
             } else {
-                val = current1.getVal();
+                val = current1.getValue();
                 current1 = current1.getNext();
             }
 
@@ -44,11 +42,11 @@ public class Solution {
 
         ListNode mergedList = new ListNode(0, null), current = mergedList;
         while (list1 != null && list2 != null) {
-            if (list1.getVal() <= list2.getVal()) {
-                current.setNext(new ListNode(list1.getVal(), null));
+            if (list1.getValue() <= list2.getValue()) {
+                current.setNext(new ListNode(list1.getValue(), null));
                 list1 = list1.getNext();
             } else {
-                current.setNext(new ListNode(list2.getVal(), null));
+                current.setNext(new ListNode(list2.getValue(), null));
                 list2 = list2.getNext();
             }
 
@@ -66,19 +64,11 @@ public class Solution {
         if (list2 == null) return list1;
 
         ListNode mergedList = new ListNode(0, null);
-        if (list1.getVal() < list2.getVal()) {
-            mergedList.setNext(new ListNode(list1.getVal(), this.mergeTwoListsRecursive(list1.getNext(), list2)));
+        if (list1.getValue() < list2.getValue()) {
+            mergedList.setNext(new ListNode(list1.getValue(), this.mergeTwoListsRecursive(list1.getNext(), list2)));
         } else {
-            mergedList.setNext(new ListNode(list2.getVal(), this.mergeTwoListsRecursive(list1, list2.getNext())));
+            mergedList.setNext(new ListNode(list2.getValue(), this.mergeTwoListsRecursive(list1, list2.getNext())));
         }
         return mergedList.getNext();
-    }
-
-    @AllArgsConstructor
-    @Getter
-    @Setter
-    public static class ListNode {
-        private int val;
-        private ListNode next;
     }
 }

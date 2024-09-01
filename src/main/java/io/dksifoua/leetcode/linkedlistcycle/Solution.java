@@ -1,8 +1,6 @@
 package io.dksifoua.leetcode.linkedlistcycle;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import io.dksifoua.leetcode.utils.ListNode;
 
 public class Solution {
 
@@ -17,13 +15,5 @@ public class Solution {
         }
 
         return false;
-    }
-
-    @AllArgsConstructor
-    @Getter
-    @Setter
-    public static final class ListNode {
-        private int val;
-        private ListNode next;
     }
 }

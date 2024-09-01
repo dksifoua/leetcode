@@ -1,6 +1,6 @@
 package io.dksifoua.leetcode.removenthnodefromendoflist;
 
-import io.dksifoua.leetcode.removenthnodefromendoflist.Solution.ListNode;
+import io.dksifoua.leetcode.utils.ListNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -16,10 +16,10 @@ public class SolutionTest {
                                 new ListNode(4,
                                         new ListNode(5, null)))));
         ListNode result = solution.removeNthFromEnd(head, 2);
-        Assertions.assertEquals(1, result.getVal());
-        Assertions.assertEquals(2, result.getNext().getVal());
-        Assertions.assertEquals(3, result.getNext().getNext().getVal());
-        Assertions.assertEquals(5, result.getNext().getNext().getNext().getVal());
+        Assertions.assertEquals(1, result.getValue());
+        Assertions.assertEquals(2, result.getNext().getValue());
+        Assertions.assertEquals(3, result.getNext().getNext().getValue());
+        Assertions.assertEquals(5, result.getNext().getNext().getNext().getValue());
         Assertions.assertNull(result.getNext().getNext().getNext().getNext());
     }
 
@@ -35,7 +35,7 @@ public class SolutionTest {
         ListNode head = new ListNode(1,
                 new ListNode(2, null));
         ListNode result = solution.removeNthFromEnd(head, 1);
-        Assertions.assertEquals(1, result.getVal());
+        Assertions.assertEquals(1, result.getValue());
         Assertions.assertNull(result.getNext());
     }
 }

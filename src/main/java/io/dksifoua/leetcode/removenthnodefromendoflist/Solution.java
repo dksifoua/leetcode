@@ -1,5 +1,6 @@
 package io.dksifoua.leetcode.removenthnodefromendoflist;
 
+import io.dksifoua.leetcode.utils.ListNode;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -26,13 +27,5 @@ public class Solution {
         previous.setNext(current.getNext());
 
         return head;
-    }
-
-    @AllArgsConstructor
-    @Getter
-    @Setter
-    public static final class ListNode {
-        private int val;
-        private ListNode next;
     }
 }

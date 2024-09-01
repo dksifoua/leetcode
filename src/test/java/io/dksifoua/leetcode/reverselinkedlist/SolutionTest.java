@@ -1,5 +1,6 @@
 package io.dksifoua.leetcode.reverselinkedlist;
 
+import io.dksifoua.leetcode.utils.ListNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -9,16 +10,15 @@ public class SolutionTest {
 
     @Test
     void test1() {
-        Solution.ListNode head = new Solution.ListNode(1,
-                new Solution.ListNode(2,
-                        new Solution.ListNode(3,
-                                new Solution.ListNode(4,
-                                        new Solution.ListNode(5, null)))));
-        Solution.ListNode reversedHead = solution.reverseList(head);
-        Solution.ListNode reversedCurrent = reversedHead;
+        ListNode head = new ListNode(1,
+                new ListNode(2,
+                        new ListNode(3,
+                                new ListNode(4,
+                                        new ListNode(5, null)))));
+        ListNode reversedCurrent = solution.reverseList(head);
         int val = 5;
         while (reversedCurrent != null) {
-            Assertions.assertEquals(val, reversedCurrent.getVal());
+            Assertions.assertEquals(val, reversedCurrent.getValue());
             val -= 1;
             reversedCurrent = reversedCurrent.getNext();
         }
@@ -26,16 +26,15 @@ public class SolutionTest {
 
     @Test
     void testOptimal1() {
-        Solution.ListNode head = new Solution.ListNode(1,
-                new Solution.ListNode(2,
-                        new Solution.ListNode(3,
-                                new Solution.ListNode(4,
-                                        new Solution.ListNode(5, null)))));
-        Solution.ListNode reversedHead = solution.reverseListOptimal(head);
-        Solution.ListNode reversedCurrent = reversedHead;
+        ListNode head = new ListNode(1,
+                new ListNode(2,
+                        new ListNode(3,
+                                new ListNode(4,
+                                        new ListNode(5, null)))));
+        ListNode reversedCurrent = solution.reverseListOptimal(head);
         int val = 5;
         while (reversedCurrent != null) {
-            Assertions.assertEquals(val, reversedCurrent.getVal());
+            Assertions.assertEquals(val, reversedCurrent.getValue());
             val -= 1;
             reversedCurrent = reversedCurrent.getNext();
         }
@@ -43,15 +42,13 @@ public class SolutionTest {
 
     @Test
     void test2() {
-        Solution.ListNode head = null;
-        Solution.ListNode reversedHead = solution.reverseList(head);
+        ListNode reversedHead = solution.reverseList(null);
         Assertions.assertNull(reversedHead);
     }
 
     @Test
     void testOptimal2() {
-        Solution.ListNode head = null;
-        Solution.ListNode reversedHead = solution.reverseListOptimal(head);
+        ListNode reversedHead = solution.reverseListOptimal(null);
         Assertions.assertNull(reversedHead);
     }
 }

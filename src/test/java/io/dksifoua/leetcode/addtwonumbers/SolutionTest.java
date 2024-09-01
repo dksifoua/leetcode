@@ -1,6 +1,6 @@
 package io.dksifoua.leetcode.addtwonumbers;
 
-import io.dksifoua.leetcode.addtwonumbers.Solution.ListNode;
+import io.dksifoua.leetcode.utils.ListNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -17,9 +17,9 @@ public class SolutionTest {
                 new ListNode(6,
                         new ListNode(4, null)));
         ListNode result = solution.addTwoNumbers(list1, list2);
-        Assertions.assertEquals(7, result.getVal());
-        Assertions.assertEquals(0, result.getNext().getVal());
-        Assertions.assertEquals(8, result.getNext().getNext().getVal());
+        Assertions.assertEquals(7, result.getValue());
+        Assertions.assertEquals(0, result.getNext().getValue());
+        Assertions.assertEquals(8, result.getNext().getNext().getValue());
         Assertions.assertNull(result.getNext().getNext().getNext());
     }
 
@@ -28,7 +28,7 @@ public class SolutionTest {
         ListNode list1 = new ListNode(0, null);
         ListNode list2 = new ListNode(0, null);
         ListNode result = solution.addTwoNumbers(list1, list2);
-        Assertions.assertEquals(0, result.getVal());
+        Assertions.assertEquals(0, result.getValue());
         Assertions.assertNull(result.getNext());
     }
 
@@ -46,14 +46,14 @@ public class SolutionTest {
                         new ListNode(9,
                                 new ListNode(9, null))));
         ListNode result = solution.addTwoNumbers(list1, list2);
-        Assertions.assertEquals(8, result.getVal());
-        Assertions.assertEquals(9, result.getNext().getVal());
-        Assertions.assertEquals(9, result.getNext().getNext().getVal());
-        Assertions.assertEquals(9, result.getNext().getNext().getNext().getVal());
-        Assertions.assertEquals(0, result.getNext().getNext().getNext().getNext().getVal());
-        Assertions.assertEquals(0, result.getNext().getNext().getNext().getNext().getNext().getVal());
-        Assertions.assertEquals(0, result.getNext().getNext().getNext().getNext().getNext().getNext().getVal());
-        Assertions.assertEquals(1, result.getNext().getNext().getNext().getNext().getNext().getNext().getNext().getVal());
+        Assertions.assertEquals(8, result.getValue());
+        Assertions.assertEquals(9, result.getNext().getValue());
+        Assertions.assertEquals(9, result.getNext().getNext().getValue());
+        Assertions.assertEquals(9, result.getNext().getNext().getNext().getValue());
+        Assertions.assertEquals(0, result.getNext().getNext().getNext().getNext().getValue());
+        Assertions.assertEquals(0, result.getNext().getNext().getNext().getNext().getNext().getValue());
+        Assertions.assertEquals(0, result.getNext().getNext().getNext().getNext().getNext().getNext().getValue());
+        Assertions.assertEquals(1, result.getNext().getNext().getNext().getNext().getNext().getNext().getNext().getValue());
         Assertions.assertNull(result.getNext().getNext().getNext().getNext().getNext().getNext().getNext().getNext());
     }
 
@@ -66,9 +66,9 @@ public class SolutionTest {
                 new ListNode(6,
                         new ListNode(4, null)));
         ListNode result = solution.addTwoNumbers(list1, list2);
-        Assertions.assertEquals(7, result.getVal());
-        Assertions.assertEquals(0, result.getNext().getVal());
-        Assertions.assertEquals(8, result.getNext().getNext().getVal());
+        Assertions.assertEquals(7, result.getValue());
+        Assertions.assertEquals(0, result.getNext().getValue());
+        Assertions.assertEquals(8, result.getNext().getNext().getValue());
         Assertions.assertNull(result.getNext().getNext().getNext());
     }
 }

@@ -1,6 +1,6 @@
 package io.dksifoua.leetcode.linkedlistcycle;
 
-import io.dksifoua.leetcode.linkedlistcycle.Solution.ListNode;
+import io.dksifoua.leetcode.utils.ListNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;

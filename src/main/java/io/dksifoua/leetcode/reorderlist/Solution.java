@@ -1,8 +1,6 @@
 package io.dksifoua.leetcode.reorderlist;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import io.dksifoua.leetcode.utils.ListNode;
 
 public class Solution {
 
@@ -69,31 +67,5 @@ public class Solution {
         System.out.println("- Merge the two halves");
         this.merge(head, middle);
         System.out.println("Reordered: " + head);
-    }
-
-    @AllArgsConstructor
-    @Getter
-    @Setter
-    public static class ListNode {
-        private int val;
-        private ListNode next;
-
-        @Override
-        public String toString() {
-            StringBuilder result = new StringBuilder();
-
-            ListNode current = this;
-            while (current != null) {
-                result.append(current.getVal());
-                if (current.getNext() != null) {
-                    result.append(" -> ");
-                } else {
-                    result.append(" -> null");
-                }
-                current = current.getNext();
-            }
-
-            return result.toString();
-        }
     }
 }
