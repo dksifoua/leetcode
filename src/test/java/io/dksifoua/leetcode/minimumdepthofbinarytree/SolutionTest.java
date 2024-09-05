@@ -1,7 +1,6 @@
 package io.dksifoua.leetcode.minimumdepthofbinarytree;
 
 import io.dksifoua.leetcode.utils.TreeNode;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -15,6 +15,7 @@
 | 0021 | Easy       | Merge Two Sorted Lists                         | Linked List, Recursion                                               | [solution](./docs/0021-Merge-Two-Sorted-Lists.md)                         |
 | 0022 | Medium     | Generate Parentheses                           | String, Dynamic Programming, Backtracking                            | [solution](./docs/0022-Generate-Parentheses.md)                           |
 | 0023 | Hard       | Merge K sorted Lists                           | Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort   | [solution](./docs/0023-Merge-K-Sorted-Lists.md)                           |
+| 0025 | Hard       | Reverse Nodes in k-Group                       | Linked List, Recursion                                               | [solution](./docs/0025-Reverse-Nodes-in-k-Group.md)                       |
 | 0033 | Medium     | Search in Rotated Sorted Array                 | Array, Binary Search                                                 | [solution](./docs/0033-Search-In-Rotated-Sorted-Array.md)                 |
 | 0036 | Medium     | Valid Sudoku                                   | Array, HashTable, Matrix                                             | [solution](./docs/0036-Valid-Sudoku.md)                                   |
 | 0042 | Hard       | Trapping Rain Water                            | Array, Two Pointers, Dynamic Programming, Stack                      | [solution](./docs/0042-Trapping-Rain-Water.md)                            |
