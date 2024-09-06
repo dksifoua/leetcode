@@ -48,6 +48,7 @@
 | 0347 | Medium     | Top K Frequent Elements                        | Array, HashMap, Bucket Sort                                          | [Solution](./docs/0347-Top-K-Frequent-Elements.md)                        |
 | 0392 | Easy       | Is Subsequence                                 | Two Pointers, String, Dynamic Programming                            | [solution](./docs/0392-Is-Subsequence.md)                                 |
 | 0424 | Medium     | Longest Repeating Character Replacement        | HashTable, String, Sliding Windows                                   | [solution](./docs/0424-Longest-Repeating-Character-Replacement.md)        |
+| 0543 | Easy       | Diameter of Binary Tree                        | Tree, Depth-First Search, Binary Tree                                | [solution](./docs/0543-Diameter-of-Binary-Tree.md)                        |
 | 0567 | Medium     | Permutation in String                          | Hash Table, Two Pointers, String, Sliding Window                     | [solution](./docs/0567-Permutation-In-String.md)                          |
 | 0704 | Easy       | Binary Search                                  | Array, Binary Search                                                 | [solution](./docs/0704-Binary-Search.md)                                  |
 | 0739 | Medium     | Daily Temperatures                             | Array, Stack, Monotonic Stack                                        | [solution](./docs/0139-Daily-Temperatures.md)                             |
