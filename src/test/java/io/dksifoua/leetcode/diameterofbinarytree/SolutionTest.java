@@ -16,8 +16,20 @@ public class SolutionTest {
     }
 
     @Test
+    void test1Iterative() {
+        TreeNode root = TreeNode.build(new Integer[] { 1, 2, 3, 4, 5, null, null });
+        assertEquals(3, solution.diameterOfBinaryTreeIterative(root));
+    }
+
+    @Test
     void test2() {
         TreeNode root = TreeNode.build(new Integer[] { 1, 2, null });
         assertEquals(1, solution.diameterOfBinaryTree(root));
+    }
+
+    @Test
+    void test2Iterative() {
+        TreeNode root = TreeNode.build(new Integer[] { 1, 2, null });
+        assertEquals(1, solution.diameterOfBinaryTreeIterative(root));
     }
 }
