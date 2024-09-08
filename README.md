@@ -24,6 +24,7 @@
 | 0076 | Hard       | Minimum Window Substring                       | Hash Table, String, Sliding Window                                   | [solution](./docs/0076-Mininum-Window-Substring.md)                       |
 | 0084 | Hard       | Largest Rectangle in Histogram                 | Array, Stack, Monotonic Stack                                        | [solution](./docs/0084-Largest-Rectangle-In-Histogram.md)                 |
 | 0104 | Easy       | Maximum Depth of Binary Tree                   | Tree, Depth-First Search, Breadth-First Search, Binary Tree          | [solution](./docs/0104-Maximum-Depth-of-Binary-Tree.md)                   |
+| 0110 | Easy       | Balanced Binary Tree                           | Tree, Depth-First Search, Binary Tree                                | [solution](./docs/0110-Balanced-Binary-Tree.md)                           |
 | 0111 | Easy       | Minimum Depth of Binary Tree                   | Tree, Depth-First Search, Breadth-First Search, Binary Tree          | [solution](./docs/0111-Minimum-Depth-of-Binary-Tree.md)                   |
 | 0121 | Easy       | Best Time to Buy and Sell Stock                | Array                                                                | [solution](./docs/0121-Best-Time-to-Buy-and-Sell-Stock.md)                |
 | 0125 | Easy       | Valid Palindrome                               | String, Two Pointers                                                 | [solution](./docs/0125-Valid-Palindrome.md)                               |       
