@@ -16,7 +16,17 @@ public class SolutionTest {
     }
 
     @Test
+    void test1Iterative() {
+        assertTrue(solution.isBalancedIterative(TreeNode.build(new Integer[] { 3, 9, 20, null, null, 15, 7 })));
+    }
+
+    @Test
     void test2() {
         assertFalse(solution.isBalanced(TreeNode.build(new Integer[] { 1, 2, 2, 3, 3, null, null, 4, 4 })));
+    }
+
+    @Test
+    void test2Iterative() {
+        assertFalse(solution.isBalancedIterative(TreeNode.build(new Integer[] { 1, 2, 2, 3, 3, null, null, 4, 4 })));
     }
 }
