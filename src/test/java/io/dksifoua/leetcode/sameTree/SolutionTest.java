@@ -15,8 +15,18 @@ class SolutionTest {
     }
 
     @Test
+    void test1Iterative() {
+        assertTrue(solution.isSameTreeIterative(TreeNode.build(new Integer[] { 1, 2, 3 }), TreeNode.build(new Integer[] { 1, 2, 3 })));
+    }
+
+    @Test
     void test2() {
         assertFalse(solution.isSameTree(TreeNode.build(new Integer[] { 1, 2 }), TreeNode.build(new Integer[] { 1, null, 2 })));
+    }
+
+    @Test
+    void test2Iterative() {
+        assertFalse(solution.isSameTreeIterative(TreeNode.build(new Integer[] { 1, 2 }), TreeNode.build(new Integer[] { 1, null, 2 })));
     }
 
 }
