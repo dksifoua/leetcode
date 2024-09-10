@@ -23,6 +23,7 @@
 | 0074 | Medium     | Search a 2D Matrix                             | Array, Binary Search, Matrix                                         | [solution](./docs/0074-Search-A-2D-Matrix.md)                             |
 | 0076 | Hard       | Minimum Window Substring                       | Hash Table, String, Sliding Window                                   | [solution](./docs/0076-Mininum-Window-Substring.md)                       |
 | 0084 | Hard       | Largest Rectangle in Histogram                 | Array, Stack, Monotonic Stack                                        | [solution](./docs/0084-Largest-Rectangle-In-Histogram.md)                 |
+| 0100 | Easy       | Same Tree                                      | Tree, Depth-First Search, Breadth-First Search, Binary Tree          | [solution](./docs/0100-Same-Tree.md)                                      |
 | 0104 | Easy       | Maximum Depth of Binary Tree                   | Tree, Depth-First Search, Breadth-First Search, Binary Tree          | [solution](./docs/0104-Maximum-Depth-of-Binary-Tree.md)                   |
 | 0110 | Easy       | Balanced Binary Tree                           | Tree, Depth-First Search, Binary Tree                                | [solution](./docs/0110-Balanced-Binary-Tree.md)                           |
 | 0111 | Easy       | Minimum Depth of Binary Tree                   | Tree, Depth-First Search, Breadth-First Search, Binary Tree          | [solution](./docs/0111-Minimum-Depth-of-Binary-Tree.md)                   |
