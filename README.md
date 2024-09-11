@@ -39,6 +39,7 @@
 | 0155 | Medium     | Min Stack                                      | Stack, Design                                                        | [solution](./docs/0155-Min-Stack.md)                                      |
 | 0167 | Medium     | Two Sum II - Input Array Is Sorted             | Array, Two Pointers                                                  | [solution](./docs/0167-Two-Sum-II-Array-Is-Sorted.md)                     |
 | 0169 | Easy       | Majority Element                               | Array, HashTable, Counting                                           | [solution](./docs/0169-Majority-Element.md)                               |
+| 0199 | Medium     | Binary Tree Right Side View                    | Tree, Depth-First Search, Breadth-First Search, Binary Tree          | [solution](./docs/0199-Binary-Tree-Right-Side-View.md)                    |
 | 0206 | Easy       | Reverse Linked List                            | Linked List, Recursion                                               | [solution](./docs/0206-Reverse-Linked-List.md)                            |
 | 0217 | Easy       | Contains Duplicate                             | Array                                                                | [solution](./docs/0217-Contains-Duplicate.md)                             |
 | 0219 | Easy       | Contains Duplicate II                          | Array                                                                | [solution](./docs/0219-Contains-Duplicate-II.md)                          |

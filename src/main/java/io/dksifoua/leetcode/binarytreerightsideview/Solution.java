@@ -1,0 +1,33 @@
+package io.dksifoua.leetcode.binarytreerightsideview;
+
+import io.dksifoua.leetcode.utils.TreeNode;
+
+import java.util.*;
+
+public class Solution {
+
+    public List<Integer> rightSideView(TreeNode root) {
+        if (root == null) return new ArrayList<>();
+
+        List<Integer> result = new ArrayList<>();
+        Queue<LevelToNodeTuple> queue = new LinkedList<>() {{ add(new LevelToNodeTuple(0, root)); }};
+        while (!queue.isEmpty()) {
+            LevelToNodeTuple levelToNodeTuple = queue.remove();
+            int level = levelToNodeTuple.level();
+            TreeNode node = levelToNodeTuple.node();
+            if (result.size() - 1 < level) {
+                result.add(node.getValue());
+            } else {
+                result.set(level, node.getValue());
+            }
+
+            if (node.getLeft() != null) queue.add(new LevelToNodeTuple(level + 1, node.getLeft()));
+            if (node.getRight() != null) queue.add(new LevelToNodeTuple(level + 1, node.getRight()));
+        }
+
+        return result;
+    }
+
+    private record LevelToNodeTuple(int level, TreeNode node) {
+    }
+}
