@@ -30,4 +30,24 @@ public class Solution {
 
     private record LevelToNodeTuple(int level, TreeNode node) {
     }
+
+    public List<Integer> rightSideViewRecursive(TreeNode root) {
+        if (root == null) return new ArrayList<>();
+
+        List<Integer> result = new ArrayList<>();
+        dfs(root, result, 0);
+
+        return result;
+    }
+
+    private void dfs(TreeNode node, List<Integer> result, int level) {
+        if (result.size() - 1 < level) {
+            result.add(node.getValue());
+        } else {
+            result.set(level, node.getValue());
+        }
+
+        if (node.getLeft() != null) dfs(node.getLeft(), result, level + 1);
+        if (node.getRight() != null) dfs(node.getRight(), result, level + 1);
+    }
 }
