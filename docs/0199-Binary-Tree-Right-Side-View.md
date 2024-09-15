@@ -9,7 +9,7 @@ ensures that we visit nodes level by level and can easily determine the rightmos
 ## Approach
 
 1. **Breadth-First Search (BFS):**
-    - Use a queue to perform a level-order traversal of the tree. Each element in the queue contains a tuple of the
+    - Use a queue to perform a level-order traversal of the tree. Each element in the queue contains a tuple2 of the
       current node and its level.
     - Keep track of the rightmost node at each level. The last node processed for a given level during BFS is the
       rightmost node for that level.

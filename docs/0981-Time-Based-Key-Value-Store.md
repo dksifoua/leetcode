@@ -18,7 +18,7 @@ This allows us to use binary search to quickly find the most recent value for a 
 
 - `set(String key, String value, int timestamp)`
   1. **Check for Key Existence:** If the key does not exist in the map, initialize a new `ArrayList` for that key.
-  2. **Store the Value:** Append the `(value, timestamp)` tuple to the list associated with the key. Since timestamps 
+  2. **Store the Value:** Append the `(value, timestamp)` tuple2 to the list associated with the key. Since timestamps 
   are strictly increasing, this maintains the order.
 
 - `get(String key, int timestamp)`
