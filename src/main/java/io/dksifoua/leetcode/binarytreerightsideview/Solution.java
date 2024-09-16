@@ -1,6 +1,7 @@
 package io.dksifoua.leetcode.binarytreerightsideview;
 
 import io.dksifoua.leetcode.utils.TreeNode;
+import io.dksifoua.leetcode.utils.Tuple2;
 
 import java.util.*;
 
@@ -10,25 +11,22 @@ public class Solution {
         if (root == null) return new ArrayList<>();
 
         List<Integer> result = new ArrayList<>();
-        Queue<LevelToNodeTuple> queue = new LinkedList<>() {{ add(new LevelToNodeTuple(0, root)); }};
+        Queue<Tuple2<Integer, TreeNode>> queue = new LinkedList<>() {{ add(new Tuple2<>(0, root)); }};
         while (!queue.isEmpty()) {
-            LevelToNodeTuple levelToNodeTuple = queue.remove();
-            int level = levelToNodeTuple.level();
-            TreeNode node = levelToNodeTuple.node();
+            Tuple2<Integer, TreeNode> levelToNodeTuple = queue.remove();
+            int level = levelToNodeTuple.first();
+            TreeNode node = levelToNodeTuple.second();
             if (result.size() - 1 < level) {
                 result.add(node.getValue());
             } else {
                 result.set(level, node.getValue());
             }
 
-            if (node.getLeft() != null) queue.add(new LevelToNodeTuple(level + 1, node.getLeft()));
-            if (node.getRight() != null) queue.add(new LevelToNodeTuple(level + 1, node.getRight()));
+            if (node.getLeft() != null) queue.add(new Tuple2<>(level + 1, node.getLeft()));
+            if (node.getRight() != null) queue.add(new Tuple2<>(level + 1, node.getRight()));
         }
 
         return result;
-    }
-
-    private record LevelToNodeTuple(int level, TreeNode node) {
     }
 
     public List<Integer> rightSideViewRecursive(TreeNode root) {
