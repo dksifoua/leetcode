@@ -28,6 +28,22 @@ public class SolutionTest {
     }
 
     @Test
+    void test1Recursive() {
+        TreeNode root = TreeNode.build(new Integer[] { 3, 9, 20, null, null, 15, 7 });
+        List<List<Integer>> expected = new ArrayList<>() {{
+            add(List.of(3));
+            add(List.of(9, 20));
+            add(List.of(15, 7));
+        }};
+        List<List<Integer>> actual = solution.levelOrderRecursive(root);
+
+        Assertions.assertEquals(expected.size(), actual.size());
+        for (int i = 0; i < expected.size(); i++) {
+            Assertions.assertArrayEquals(expected.get(i).toArray(), actual.get(i).toArray());
+        }
+    }
+
+    @Test
     void test2() {
         TreeNode root = TreeNode.build(new Integer[] { 1});
         List<List<Integer>> expected = new ArrayList<>() {{
@@ -42,9 +58,31 @@ public class SolutionTest {
     }
 
     @Test
+    void test2Recursive() {
+        TreeNode root = TreeNode.build(new Integer[] { 1});
+        List<List<Integer>> expected = new ArrayList<>() {{
+            add(List.of(1));
+        }};
+        List<List<Integer>> actual = solution.levelOrderRecursive(root);
+
+        Assertions.assertEquals(expected.size(), actual.size());
+        for (int i = 0; i < expected.size(); i++) {
+            Assertions.assertArrayEquals(expected.get(i).toArray(), actual.get(i).toArray());
+        }
+    }
+
+    @Test
     void test3() {
         TreeNode root = TreeNode.build(new Integer[] {  });
         List<List<Integer>> actual = solution.levelOrder(root);
+
+        Assertions.assertEquals(0, actual.size());
+    }
+
+    @Test
+    void test3Recursive() {
+        TreeNode root = TreeNode.build(new Integer[] {  });
+        List<List<Integer>> actual = solution.levelOrderRecursive(root);
 
         Assertions.assertEquals(0, actual.size());
     }

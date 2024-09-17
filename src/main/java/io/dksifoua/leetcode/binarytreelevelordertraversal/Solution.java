@@ -34,4 +34,23 @@ public class Solution {
 
         return result;
     }
+
+    public List<List<Integer>> levelOrderRecursive(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        if (root == null) return result;
+
+        dfs(root, 0, result);
+        return result;
+    }
+
+    private void dfs(TreeNode node, int level, List<List<Integer>> result) {
+        if (level <= result.size() - 1) {
+            result.get(level).add(node.getValue());
+        } else {
+            result.add(new ArrayList<>() {{ add(node.getValue()); }});
+        }
+
+        if (node.getLeft() != null) dfs(node.getLeft(), level + 1, result);
+        if (node.getRight() != null) dfs(node.getRight(), level + 1, result);
+    }
 }
