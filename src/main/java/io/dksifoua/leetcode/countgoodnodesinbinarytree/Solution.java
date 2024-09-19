@@ -31,4 +31,23 @@ public class Solution {
 
         return result;
     }
+
+    public int goodNodesRecursive(TreeNode root) {
+        int[] result = new int[] { 0 };
+        if (root == null) return result[0];
+
+        dfs(root, Integer.MIN_VALUE, result);
+
+        return result[0];
+    }
+
+    private void dfs(TreeNode node, int maxValue, int[] result) {
+        if (node.getValue() >= maxValue) {
+            maxValue = node.getValue();
+            result[0] += 1;
+        }
+
+        if (node.getLeft() != null) dfs(node.getLeft(), maxValue, result);
+        if (node.getRight() != null) dfs(node.getRight(), maxValue, result);
+    }
 }
