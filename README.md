@@ -45,6 +45,7 @@
 | 0217 | Easy       | Contains Duplicate                             | Array                                                                | [solution](./docs/0217-Contains-Duplicate.md)                             |
 | 0219 | Easy       | Contains Duplicate II                          | Array                                                                | [solution](./docs/0219-Contains-Duplicate-II.md)                          |
 | 0226 | Easy       | Invert Binary Tree                             | Tree, Depth-First Search, Breadth-First Search, Binary Tree          | [solution](./docs/0226-Invert-Binary-Tree.md)                             |
+| 0230 | Medium     | Kth Smallest Element in a BST                  | Tree, Depth-First Search, Binary Search Tree, Binary Tree            | [solution](./docs/0230-Kth-Smallest-Element-in-a-BST.md)                  |
 | 0238 | Medium     | Product of Array Except Self                   | Array                                                                | [solution](./docs/0238-Product-Of-Array-Except-Self.md)                   |
 | 0239 | Hard       | Sliding Window Maximum                         | Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue | [solution](./docs/0239-Sliding-Window-Maximum.md)                         |
 | 0242 | Easy       | Valid Anagram                                  | String, HashTable                                                    | [solution](./docs/0242-Valid-Anagram.md)                                  |   
