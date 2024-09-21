@@ -22,4 +22,31 @@ public class Solution {
 
         if (node.getRight() != null) dfs(node.getRight(), smallest);
     }
+
+    public int kthSmallestIterative(TreeNode root, int k) {
+        TreeNode current = root;
+        while (current != null) {
+            if (current.getLeft() == null) {
+                k -= 1;
+                if (k == 0) return current.getValue();
+                current = current.getRight();
+            } else {
+                TreeNode previous = current.getLeft();
+                while (previous.getRight() != null && previous.getRight() != current) {
+                    previous = previous.getRight();
+                }
+
+                if (previous.getRight() == null) {
+                    previous.setRight(current);
+                    current = current.getLeft();
+                } else {
+                    k -= 1;
+                    if (k == 0) return current.getValue();
+                    current = current.getRight();
+                }
+            }
+        }
+
+        throw new IllegalArgumentException("Not solvable!!");
+    }
 }
