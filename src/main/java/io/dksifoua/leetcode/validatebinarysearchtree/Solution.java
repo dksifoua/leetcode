@@ -27,4 +27,17 @@ public class Solution {
 
         return true;
     }
+
+    public boolean isValidBSTRecursive(TreeNode root) {
+        return dfs(root, Long.MIN_VALUE, Long.MAX_VALUE);
+    }
+
+    private boolean dfs(TreeNode node, long minValue, long maxValue) {
+        if (node == null) return true;
+
+        if (node.getValue() <= minValue || node.getValue() >= maxValue) return false;
+
+        return dfs(node.getLeft(), minValue, (long) node.getValue())
+                && dfs(node.getRight(), (long) node.getValue(), maxValue);
+    }
 }
