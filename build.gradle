@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'jacoco'
+    id 'com.adarshr.test-logger' version '4.0.0'
 }
 
 group = 'io.dksifoua'
@@ -17,12 +18,18 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.34'
     testCompileOnly 'org.projectlombok:lombok:1.18.34'
 
-    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation platform('org.junit:junit-bom:5.12.2')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 test {
     useJUnitPlatform()
+    failFast true
+    testlogger {
+        theme 'mocha'
+        showPassed false
+    }
     finalizedBy jacocoTestReport
 }
 
