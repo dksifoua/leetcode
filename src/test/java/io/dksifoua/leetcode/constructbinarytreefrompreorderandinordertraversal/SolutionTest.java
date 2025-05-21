@@ -21,6 +21,17 @@ class SolutionTest {
     }
 
     @Test
+    void testBuildTreeOptimal_Example1() {
+        int[] preorder = { 3, 9, 20, 15, 7 };
+        int[] inorder = { 9, 3, 15, 20, 7 };
+
+        TreeNode actual = solution.buildTreeOptimal(preorder, inorder);
+        Integer[] expectedArray = { 3, 9, 20, null, null, 15, 7 };
+
+        assertArrayEquals(expectedArray, actual.toArray());
+    }
+
+    @Test
     void testBuildTree_SingleNode() {
         int[] preorder = { 1 };
         int[] inorder = { 1 };
@@ -32,11 +43,32 @@ class SolutionTest {
     }
 
     @Test
+    void testBuildTreeOptimal_SingleNode() {
+        int[] preorder = { 1 };
+        int[] inorder = { 1 };
+
+        TreeNode actual = solution.buildTreeOptimal(preorder, inorder);
+        Integer[] expectedArray = { 1 };
+
+        assertArrayEquals(expectedArray, actual.toArray());
+    }
+
+    @Test
     void testBuildTree_Empty() {
         int[] preorder = {};
         int[] inorder = {};
 
         TreeNode actual = solution.buildTree(preorder, inorder);
+
+        assertNull(actual);
+    }
+
+    @Test
+    void testBuildTreeOptimal_Empty() {
+        int[] preorder = {};
+        int[] inorder = {};
+
+        TreeNode actual = solution.buildTreeOptimal(preorder, inorder);
 
         assertNull(actual);
     }
