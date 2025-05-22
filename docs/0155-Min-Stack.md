@@ -2,9 +2,9 @@
 
 ## Intuition
 
-The goal of this problem is to design a stack that supports standard operations (`push`, `pop`, `top`) along with an 
+The goal of this problem is to design a stack that supports standard operations (`push`, `pop`, `top`) along with an
 additional operation (`getMin`) which retrieves the minimum element in the stack. All operations should have `O(1)` time
-complexity. To achieve this, we need to maintain a structure that can efficiently track the minimum value as elements 
+complexity. To achieve this, we need to maintain a structure that can efficiently track the minimum value as elements
 are pushed and popped from the stack.
 
 ## Approach
@@ -27,19 +27,19 @@ Each node is represented as a record with three fields:
 
 1. **Initialization (`MinStack`):** The stack is initialized with headset to null.
 2. **Push (`push(int val)`)**
-   - When pushing a new value, a new node is created.
-   - If the stack is empty (`head` is `null`), the new node’s `min` value is the value being pushed.
-   - Otherwise, the new node’s `min` value is the minimum of the current head’s `min` value and the new value.
-   - The new node is then set as the new head of the stack.
-3. **Pop (`pop()`)$:** The top element is removed by setting `head` to `head.next`. 
+    - When pushing a new value, a new node is created.
+    - If the stack is empty (`head` is `null`), the new node’s `min` value is the value being pushed.
+    - Otherwise, the new node’s `min` value is the minimum of the current head’s `min` value and the new value.
+    - The new node is then set as the new head of the stack.
+3. **Pop (`pop()`)$:** The top element is removed by setting `head` to `head.next`.
 4. **Top (`top()`):** Returns the value of the `head` node.
 5. **Get Minimum (`getMin()`)** Returns the minimum value of the head node.
 
 ## Complexity
 
 - **Time Complexity: O(1)** for each operation because they involve simple assignments and comparisons.
-- **Space Complexity: O(N)**, where `N` is the number of elements in the stack, because each element is stored with its 
-associated minimum value.
+- **Space Complexity: O(N)**, where `N` is the number of elements in the stack, because each element is stored with its
+  associated minimum value.
 
 ## Code
 

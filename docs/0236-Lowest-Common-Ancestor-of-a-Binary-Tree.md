@@ -43,8 +43,8 @@ Edge cases:
 
 ## ⏱️ Complexity
 
-| Metric | Complexity                                               |
-|--------|----------------------------------------------------------|
+| Metric | Complexity                                                 |
+|--------|------------------------------------------------------------|
 | Time   | `O(h)`, where *h* is the height of the BST                 |
 | Space  | `O(1)`, iterative traversal with no additional memory used |
 
